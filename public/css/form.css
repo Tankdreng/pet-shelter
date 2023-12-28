@@ -1,3 +1,60 @@
+/***** THEMES *****/
+.theme-light {
+	--background: var(--white);
+	--color: var(--black);
+	--button-color: var(--blue);
+
+    --pet-card-title-color: var(--black);
+    --pet-card-text-color: var(--black);
+
+	--card-background: var(--blue);
+    --card-title-color: var(--black);
+    --card-text-color: var(--black);
+    --card-error-text-color: var(--navy);
+
+    --login-button-card-background: var(--lightblue);
+    --login-button-card-hover: var(--white);
+
+    --link: var(--white);
+
+    --form-control: var(--navy);
+    --form-control-hover: var(--white);
+    --form-control-focus: var(--white);
+    --form-hr: var(--lightgray);
+}
+
+.theme-dark {
+	--background: var(--black);
+	--color: var(--white);
+	--button-color: var(--navy);
+
+    --pet-card-title-color: var(--white);
+    --pet-card-text-color: var(--white);
+
+    --card-background: var(--darkgray); 
+    --card-title-color: var(--white);
+    --card-text-color: var(--white);
+    --card-error-text-color: var(--darkgray);
+
+    --login-button-card-background: var(--lightblue);
+    --login-button-card-hover: var(--white);
+
+    --link: var(--white);
+
+    --form-control: var(--cyan);
+    --form-control-hover: var(--lightblue);
+    --form-control-focus: var(--lightblue);
+    --form-hr: var(--lightgray);
+}
+
+.pet-card-title {
+    color: var(--pet-card-title-color) !important;
+}
+
+.pet-card-text {
+    color: var(--pet-card-text-color) !important;
+}
+
 .form-container {
     margin-top: 5vh;
     margin-left: auto;
@@ -8,7 +65,7 @@
 .card {
     margin: auto;
     margin-top: 40px !important;
-    background-color: var(--blue) !important;
+    background-color: var(--card-background) !important;
     border-radius: 20px !important;
     border: none !important;
     width: 400px !important;
@@ -21,7 +78,7 @@
     .card {
         margin: auto;
         margin-top: 20px !important;
-        background-color: var(--blue) !important;
+        background-color: var(--card-background) !important;
         border-radius: 20px !important;
         border: none !important;
         width: 240px !important;
@@ -32,36 +89,36 @@
 }
 
 .card-title {
-    color: var(--white) !important;
+    color: var(--card-title-color) !important;
 }
 
 .card-text {
-    color: var(--white) !important;
+    color: var(--card-text-color) !important;
 }
 
 .card-error-text {
-    color: var(--navy) !important;
+    color: var(--card-error-text-color) !important;
     display: inline-block;
     margin: 0px;
     margin-left: 5px;
 }
 
 .login-button-card {
-    background-color: var(--lightblue) !important;
+    background-color: var(--login-button-card-background) !important;
     border: 2px solid #00000000 !important;
 }
 
 .login-button-card:hover {
     border: 2px solid !important;
-    color: var(--white);
+    color: var(--login-button-card-hover);
 }
 
 .link {
-    color: var(--white) !important;
+    color: var(--link) !important;
 }
 
 .form-control {
-    background-color: var(--navy)!important;
+    background-color: var(--form-control)!important;
     border: 2px solid #00000000 !important;
     color: rgb(240, 240, 240) !important;
     margin-bottom: 10px !important;
@@ -69,12 +126,12 @@
 
 .form-control:hover {
     border: 2px solid !important;
-    color: var(--white)M
+    color: var(--form-control-hover);
 }
 
 .form-control:focus {
     border: 2px solid !important ;
-    color: var(--white);
+    color: var(--form-control-focus);
 }
 
 .form-hr {
@@ -86,7 +143,7 @@
 
     border: none;
     border-radius: 5px;
-    background-color: var(--lightgray);
+    background-color: var(--form-hr);
     height: 4px;
     opacity: 1;
 }

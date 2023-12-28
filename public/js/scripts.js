@@ -1,8 +1,8 @@
 window.onload=function(){
-    document.getElementById("scrollDownBtn").addEventListener("click",goToSellerFunction);  
+    document.getElementById("scrollDownBtn").addEventListener("click",goToSellerFunction);
     document.getElementById("sendMessageBtn").addEventListener("click",sendContactMail);
   }
-  
+
   function goToSellerFunction() {
       document.getElementById("contactFormDiv").scrollIntoView(true);
   }

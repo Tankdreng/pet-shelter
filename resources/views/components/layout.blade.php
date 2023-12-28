@@ -18,7 +18,7 @@
     <title>Happy Tails | {{ $title }}</title>
 </head>
 
-<body>
+<body class="theme-dark theme-light">
     @include('partials/_navigation')
 
     <div class="container">

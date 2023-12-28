@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container">
+    <div class="container theme-dark theme-light">
         <a class="navbar-brand nav-bar-main-link lilita-one-font" href="/">HAPPY TAILS</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,5 +63,10 @@
                 </div>
             @endauth
         </div>
+        <label class="switch">
+            <input type="checkbox" id="theme-switcher">
+            <span class="slider round"></span>
+        </label>
     </div>
+    <script src="{{ asset('js/theme-switcher.js') }}"></script>
 </nav>

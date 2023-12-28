@@ -24,15 +24,15 @@
                         <img src="{{ asset('storage/pet_images/placeholder.webp') }}" class="card-img-top"
                             alt="Image of pet">
                     @endif
-                    <div class="card-body">
-                        <h4 class="card-title"><a href="{{ url('pet/' . $pet->id) }}"
+                    <div class="card-body theme-dark theme-light">
+                        <h4 class="pet-card-title"><a href="{{ url('pet/' . $pet->id) }}"
                                 class="text-decoration-none text-dark stretched-link">{{ $pet->name }}</a></h4>
                         <hr>
-                        <p clasS="card-text mb-1"><strong>Months old: </strong>{{ $pet->age_in_months }}</p>
-                        <p class="card-text mb-1"><strong>Breed: </strong>{{ $breeds->find($pet->breeds_id)->breed }}
+                        <p clasS="pet-card-text mb-1"><strong>Months old: </strong>{{ $pet->age_in_months }}</p>
+                        <p class="pet-card-text mb-1"><strong>Breed: </strong>{{ $breeds->find($pet->breeds_id)->breed }}
                         </p>
-                        <p clasS="card-text mb-1"><strong>Sex: </strong>{{ $pet->sex }}</p>
-                        <p clasS="card-text mt-3 h6"><strong>Price: </strong>{{ $pet->price }} DKK</p>
+                        <p clasS="pet-card-text mb-1"><strong>Sex: </strong>{{ $pet->sex }}</p>
+                        <p clasS="pet-card-text mt-3 h6"><strong>Price: </strong>{{ $pet->price }} DKK</p>
                     </div>
                 </div>
                 @auth

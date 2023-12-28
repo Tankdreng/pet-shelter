@@ -21,6 +21,6 @@ services:
       - DB_USERNAME=bn_myapp
       - DB_DATABASE=bitnami_myapp
     volumes:
-      - './pet-shelter:/app'
+      - '.:/app'
     depends_on:
       - mariadb
